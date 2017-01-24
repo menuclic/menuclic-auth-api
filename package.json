@@ -1,0 +1,23 @@
+{
+  "name": "menuclic-api-auth",
+  "version": "1.0.0",
+  "description": "Auth API MenuClic",
+  "main": "server.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/menuclic/menuclic-api-auth.git"
+  },
+  "author": "Osvaldo Garcia <aoga88@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/menuclic/menuclic-api-auth/issues"
+  },
+  "homepage": "https://github.com/menuclic/menuclic-api-auth#readme",
+  "dependencies": {
+    "dotenv": "^4.0.0",
+    "hapi": "^16.1.0"
+  }
+}
