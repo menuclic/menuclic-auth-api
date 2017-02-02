@@ -19,7 +19,7 @@ class TokenController extends Controller {
             ->first();
 
         if (empty($user)) {
-            return response()->json('notAurhorized', 401);
+            return response()->json('notAuthorized', 401);
         } else {
             $token_string = sha1(uniqid());
             $token = new UserToken();
