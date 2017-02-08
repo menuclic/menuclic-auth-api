@@ -28,7 +28,7 @@ class TokenController extends Controller {
             $token->save();
             $user->token = $token;
 
-            Cache::add($token_string, $user->id, Carbon::now()->addMinute(5));
+            Cache::add($token_string, json_encode($user), Carbon::now()->addDays(3));
             return response()->json($user, 200);
         }
     }
